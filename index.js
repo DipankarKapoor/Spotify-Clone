@@ -34,7 +34,7 @@ const playMusic = (track, pause = false) => {
     currentSong.src = "./songs/" + songName;
     if (!pause) {
         currentSong.play();
-        document.getElementById("play").src = "./pause.svg"
+        document.getElementById("play").src = "./icons/pause.svg"
     }
     document.querySelector(".songinfo").innerHTML = track;
     document.querySelector(".songtime").innerHTML = "0:00 / 0:00";
@@ -50,7 +50,7 @@ async function main() {
     //show all songs in playlist
     let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0];
     for (const x of songs) {
-        songUL.innerHTML = songUL.innerHTML + `<li> <img class="invert" src="music.svg" alt="">
+        songUL.innerHTML = songUL.innerHTML + `<li> <img class="invert" src="./icons/music.svg" alt="">
     <div class="info">
       <div> ${x.replaceAll("-", " ")} </div>
       <div>Song Artist</div>
@@ -74,11 +74,11 @@ async function main() {
     document.getElementById("play").addEventListener("click", () => {
         if (currentSong.paused) {
             currentSong.play();
-            document.getElementById("play").src = "./pause.svg"
+            document.getElementById("play").src = "./icons/pause.svg"
         }
         else {
             currentSong.pause();
-            document.getElementById("play").src = "./play.svg"
+            document.getElementById("play").src = "./icons/play.svg"
         }
     })
 
