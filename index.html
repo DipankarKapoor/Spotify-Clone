@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./utility.css" />
+  <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+
+  <!-- left container -->
+  <div class="container flex bg-black">
+    <div class="left">
+      <div class="close">
+        <img class="invert" width="30px" src="./icons/close.svg" alt="close icon">
+      </div>
+      <div class="home bg-grey rounded m-1 p-1">
+        <div class="logo">
+          <img class="invert" width="100" src="./icons/logo.svg" alt="spotify logo" />
+        </div>
+        <ul>
+          <li><img class="invert" src="./icons/home.svg" alt="Home"> Home</li>
+          <li><img class="invert" src="./icons/search.svg" alt="Search">Search</li>
+        </ul>
+      </div>
+      <div class="library bg-grey rounded m-1 p-1">
+        <div class="heading">
+          <img class="invert" src="./icons/playlist.svg" alt="playlist">
+          <h2>Your Library</h2>
+        </div>
+
+        <div class="songList">
+          <ul>
+
+          </ul>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy Center</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+          </div>
+          <div>
+            <a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- right container -->
+    </div>
+
+    <div class="right bg-grey rounded">
+      <div class="header rounded">
+
+        <div class="nav">
+          <div class="hamburgerCont">
+            <img class="invert hamburger" width="24px" src="./icons/hamburger.svg" alt="">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+              fill="none">
+              <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+              fill="none">
+              <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="signupbtn">Sign Up</button>
+          <button class="loginbtn">Log in</button>
+        </div>
+      </div>
+
+      <div class="spotify-playlist">
+        <h1>Spotify Playlists</h1>
+        <div class="cardContainer">
+
+          <div class="card">
+            <div class="play">
+              <svg height="48px" version="1.1" viewBox="0 0 48 48" width="48px" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle cx="24" cy="24" r="22.5" fill="#1DB954"></circle>
+                <polygon points="18,14.4 34.8,24 18,33.6" fill="black"></polygon>
+              </svg>
+
+            </div>
+            <img src="https://i.scdn.co/image/ab67706f00000002c39bf4a39b83cd256d48b4c3" alt="" />
+            <h2>Happy Hits!</h2>
+            <p>
+              Songs to make you smile.
+            </p>
+          </div>
+
+
+          <!--card 2 -->
+          <div class="card">
+            <div class="play">
+              <svg height="48px" version="1.1" viewBox="0 0 48 48" width="48px" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <circle cx="24" cy="24" r="22.5" fill="#1DB954"></circle>
+                <polygon points="18,14.4 34.8,24 18,33.6" fill="black"></polygon>
+              </svg>
+            </div>
+            <img src="https://i.scdn.co/image/ab67706f00000002c39bf4a39b83cd256d48b4c3" alt="" />
+            <h2>Happy Hits!</h2>
+            <p>
+              Songs to make you smile.
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="playbar">
+        <div class="seekbar">
+          <div class="circle"> </div>
+        </div>
+
+        <div class="abovebar">
+          <div class="songinfo">
+
+          </div>
+
+          <div class="songbuttons">
+            <img id="previous" width="35px" src="./icons/prevsong.svg" alt="previous song  button" />
+            <img id="play" width="35px" src="./icons/play.svg" alt="play song button">
+            <img id="next" width="35px" src="./icons/nextsong.svg" alt="next song button">
+          </div>
+
+          <div class="timevolume">
+            <div class="songtime">
+            </div>
+            <div class="volume">
+              <img src="./icons/volume.svg" alt="volume button">
+              <div class="range">
+                <input type="range" name="volume">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
