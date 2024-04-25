@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root {
-    --a: 0;
+:root{
+    --a:0;
 }
 
 * {
@@ -37,7 +37,7 @@ body {
     font-weight: bold;
 }
 
-.home ul li img {
+.home ul li img{
     width: 24px;
     height: 24px;
 }
@@ -81,7 +81,7 @@ body {
     height: 64px;
 }
 
-.header>.buttons {
+.header > .buttons{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +118,7 @@ body {
 
 .card:hover {
     background-color: #434343;
-    --a: 1;
+    --a:1;
 }
 
 
@@ -286,7 +286,7 @@ button>* {
 .songinfo {
     color: black;
     padding: 0 15px;
-    width: 250px;
+    width: 280px;
 }
 
 .songtime {
@@ -300,6 +300,11 @@ button>* {
     justify-content: center;
     gap: 7px;
     margin-right: 11px;
+    cursor: pointer;
+}
+
+.range input{
+    cursor: pointer;
 }
 
 .timevolume {
@@ -320,6 +325,7 @@ button>* {
         position: absolute;
         left: -120%;
         transition: all 2s ease-in-out;
+        /* use of the below code ? */
         z-index: 1;
         /* for mobile devices when hamburger menu opens*/
         width: 370px;
@@ -398,6 +404,7 @@ button>* {
     .cardContainer {
         margin: 0;
         justify-content: center;
+        max-height: 65vh;
     }
 
     .songinfo {
@@ -409,4 +416,5 @@ button>* {
     .spotify-playlist .card {
         width: 84vw;
     }
+
 }
