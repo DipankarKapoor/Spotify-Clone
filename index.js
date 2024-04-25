@@ -4,7 +4,7 @@ let currFolder;
 
 async function getSongs(folder) {
     currFolder = folder;
-    let a = await fetch(`https://github.com/DipankarKapoor/Spotify-Clone/tree/main/${folder}`, {mode: 'no-cors'});
+    let a = await fetch(`${folder}`);
     console.log(a);
     let response = await a.text(); 
 
