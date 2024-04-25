@@ -4,7 +4,7 @@ let currFolder;
 
 async function getSongs(folder) {
     currFolder = folder;
-    let a = await fetch(`/${folder}`);
+    let a = await fetch(`/Spotify-Clone/tree/main/${folder}`, {mode: 'no-cors'});
     console.log(a);
     let response = await a.text(); 
 
